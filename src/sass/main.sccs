@@ -1,0 +1,8 @@
+@import "font-awesome";
+
+$name: test;
+$attr: border;
+p.#{$name} {
+  #{$attr}-color: blue;
+  font-size: 56px;
+}
