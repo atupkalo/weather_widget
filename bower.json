@@ -1,5 +1,5 @@
 {
-  "name": "weather-test",
+  "name": "wether_widg",
   "description": "weather widjet",
   "main": "index.js",
   "authors": [
@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
 }
