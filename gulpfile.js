@@ -64,7 +64,7 @@ gulp.task('fonts', function(){
 gulp.task('watch', function(){
     gulp.watch('src/sass/**.*', ['styles']);
     gulp.watch('src/js/**.*', ['scripts']);
-    gulp.watch('src/index.html', ['html']);
+    gulp.watch('src/**.html', ['html']);
     gulp.watch('src/assets/**.*', ['assets']);
     gulp.watch('src/fonts/**.*', ['fonts']);
     gulp.watch('src/**/**.*').on('change', browserSync.reload);

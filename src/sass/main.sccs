@@ -1,8 +1,129 @@
 @import "font-awesome";
+@import "normalize";
+@import "adjustments";
+@import "media";
 
 $name: test;
 $attr: border;
+$green: #3F9680;
 p.#{$name} {
   #{$attr}-color: blue;
-  font-size: 56px;
+  font-size: 3rem;
+}
+body{
+  margin: 0;
+  background: #fff;
+}
+
+.block{
+  border: 1px solid #eee;
+  background: #ededee;
+  margin: 20px;
+  padding: 0 20px 10px;
+}
+.get-padding{
+  padding: 8px 20px 8px 10px;
+}
+
+
+
+//   --------------------------------------TEST PAGE-------------------------------------------------
+.form-wrap{
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  overflow: hidden;
+}
+.title{
+  text-align: center;
+}
+.test-page{
+  padding: 5px 20px;
+  background: orange;
+  margin: 10px
+}
+.header2{
+  height: 300px;
+  width: 100%;
+  background: #f7f3a5;
+}
+.logo{
+  min-height: 200px;
+  background: #f7a5a5;
+  margin-top: auto 0;
+}
+.contant-l, .contant-r{
+  width: 100%;
+  min-height: 30rem;
+}
+.contant-l{
+  background: #d4a8db;
+}
+.contant-r{
+  background: #64ccef;
+  margin: 0;
+  width: 100%;
+}
+.contant-b{
+  position: relative;
+  width: 100%;
+  min-height: 60rem;
+  background: #a8b8db;
+}
+//            -----------------------------form----------------------
+h1,h2,h3,h4,h5,h6{
+  font-size: 1.8rem;
+}
+.btn-custom{
+   position: absolute;
+   bottom: -2px;
+   right: -2px;
+   left: -2px;
+}
+
+.btn-custom-item{
+  background: #40C9B3;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-top: none;
+  margin-left: -3px;
+  margin-right: -3px;
+  padding: 15px 0;
+  width: 34%;
+  font-size: 2rem;
+  color: #fff;
+}
+.btn-custom-item:hover{
+  background: $green;
+
+}
+
+.footer{
+  min-height: 15rem;
+  background: #8a8d8e;
+  width: 100%;
+}
+.inputs-item{
+  width: 250px;
+  margin: 20px auto;
+}
+.inp{
+  height: 35px;
+  width: 100%;
+}
+.check-man{
+
+}
+.radio{
+  width: 180px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -90px;
+}
+.radio-item{
+  margin-left: 20px;
 }
