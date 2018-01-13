@@ -12,3 +12,12 @@ $h: 300px;
   text-align: center;
   padding-top: 40px;
 }
+.block-inner{
+  height: 150px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 20px;
+}
+.col-md-6{
+  padding: 0;
+}

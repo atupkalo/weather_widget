@@ -14,8 +14,8 @@ gulp.task('webpack', function() {
     return gulp.src('src/js/index.js')
         .pipe(lp.webpack({
             output: {
-                filename: 'main.js',
-            },
+                filename: 'main.js'
+            }
         }))
         .pipe(gulp.dest('dist/js/'));
 });
@@ -79,5 +79,7 @@ gulp.task('clean', function() {
         .pipe(lp.clean());
 });
 
+
+// IMPORTANT !!!
 //  for constrict main.js file in dist/js directory write in terminal:     npm run minifyjs
 
