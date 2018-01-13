@@ -1,5 +1,5 @@
 {
-  "name": "weather-test",
+  "name": "weather-beta",
   "version": "1.0.0",
   "description": "weather widjet",
   "main": "index.js",
@@ -16,10 +16,18 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^4.1.0",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.3",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "gulp-webpack": "^1.5.0",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
   }
 }

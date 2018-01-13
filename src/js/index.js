@@ -1,4 +1,5 @@
-$(document).ready(function(){
-    console.log(222);
+const slider = require('./moduls/slider.js');
+
+$(document).on('ready', function(){
+   slider(5);
 });
-console.log(555);
