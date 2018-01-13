@@ -4,7 +4,7 @@
   "description": "weather widjet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "minifyjs": "webpack"
   },
   "author": "anatolii tupkalo",
   "license": "ISC",
@@ -24,6 +24,7 @@
     "gulp-sourcemaps": "^2.6.3",
     "gulp-uglify": "^3.0.0",
     "gulp-webpack": "^1.5.0",
+    "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0"
   },
   "dependencies": {

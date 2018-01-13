@@ -79,6 +79,5 @@ gulp.task('clean', function() {
         .pipe(lp.clean());
 });
 
-
-
+//  for constrict main.js file in dist/js directory write in terminal:     npm run minifyjs
 
