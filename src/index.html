@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
           integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
@@ -12,10 +13,43 @@
             integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
             crossorigin="anonymous">
     </script>
+    <style>
+        .social {
+              width: 24px;
+              height: 24px;
+              margin: 0 10px;
+              display: inline-block;
+              background: url(img/social.png) no-repeat;
+              cursor: pointer;
+        }
+        .facebook {
+          background-position: 0px 0;
+        }
+        .instagram {
+          background-position: -24px 0;
+        }
+        .twitter {
+          background-position: -48px 0;
+        }
+        .logo {
+            font-family: 'Hammersmith One', sans-serif;
+            color: white;
+        }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title>main</title>
 </head>
 <body>
+<nav class="navbar navbar-default" role="navigation" style="background: #648cfe">
+    <div class="container">
+        <a class="navbar-brand logo" href='#'>FAN WEATHER</a>
+        <div class="navbar-header navbar-right">            
+                <div class="social facebook"><a href="#"></a></div>
+                <div class="social instagram"><a href="#"></a></div>
+                <div class="social twitter"><a href="#"></a></div>
+        </div>
+    </div>
+</nav>    
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-sm-6 col-xs-12">
