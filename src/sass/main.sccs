@@ -21,3 +21,25 @@ $h: 300px;
 .col-md-6{
   padding: 0;
 }
+
+.social {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  display: inline-block;
+  background: url(../assets/test2.jpg) no-repeat;
+  cursor: pointer;
+}
+.facebook {
+  background-position: 0px 0;
+}
+.instagram {
+  background-position: -24px 0;
+}
+.twitter {
+  background-position: -48px 0;
+}
+.logo {
+  font-family: 'Hammersmith One', sans-serif;
+  color: white;
+}
