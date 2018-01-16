@@ -3,6 +3,8 @@
  */
 module.exports = function(a){
    if(a == 5){
-     return  console.log('hello from slider');
-   };
+     return  'hello from slider';
+   }else{
+       return 'this is not right number'
+   }
 };
