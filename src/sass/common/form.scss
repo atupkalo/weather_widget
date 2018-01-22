@@ -1,0 +1,40 @@
+.form{
+  width: 100%;
+  min-height: 580px;
+  background: #b5b5c8;
+}
+.form-wrap{
+  width: 430px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-title{
+  color: $wight;
+  font-size: 1.4rem;
+  margin: 20px 0 30px 0;
+}
+.form-title__subscribe{
+  margin: 40px 0 10px 0;
+}
+.form-inputs{
+  @include input-styles($wight);
+  @include border-radius(5px);
+}
+.form-inputs_btn{
+  @include input-styles(#353854);
+  color: $wight;
+  &:hover{
+    background: #464a6f;
+    border: none;
+  }
+}
+.form-checkbox{
+  border: none;
+  width: 15px;
+  height: 15px;
+  margin: 15px 0;
+}
+.terms{
+  color: $wight;
+  font-size: 1.2rem;
+}

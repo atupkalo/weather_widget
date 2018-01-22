@@ -1,0 +1,70 @@
+.header{
+  width: 100%;
+  min-height: 780px;
+  background-image: url("/img/wave.png");
+  background-size: cover;
+}
+
+.header-bottom-left{
+  color: $wight;
+  font-size: 3.2rem;
+}
+.header-left-desc{
+  line-height: 1;
+  margin: 20px 0;
+  color: #CCCCCC;
+}
+.header-input-city{
+  font-size: 1rem;
+  @include input-styles(#fff);
+  @include border-radius(5px);
+}
+.header-bottom-left{
+  box-sizing: border-box;
+  padding: 30px 15px 0 15px;
+}
+.header-bottom-middle{
+  box-sizing: border-box;
+  padding: 30px 15px 0 15px;
+  color: $wight;
+  font-size: 1.8rem;
+}
+.header-bottom-right{
+  box-sizing: border-box;
+  padding: 30px 15px 0 15px;
+  color: $wight;
+  font-size: 1.8rem;
+}
+.header-middle__location-block{
+  margin-bottom: 50px;
+}
+
+.header-top{
+  min-height: 90px;
+  @include display-flex(row, space-between, center);
+}
+.header-top-title{
+  font-size: 1.6rem;
+}
+
+.header-top-socials__icons{
+  margin: 15px;
+  display: inline-block;
+  background-image: url("/img/spritesheet.png");
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 37px;
+  &:hover{
+    opacity: .7;
+  }
+}
+
+.header-top-socials__icons-fb{
+  background-position: -5px -5px;
+}
+.header-top-socials__icons-git{
+  background-position: -50px -5px;
+}
+.header-top-socials__icons-ln{
+  background-position: -5px -50px;
+}
