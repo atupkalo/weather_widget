@@ -13,31 +13,143 @@
             crossorigin="anonymous">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBswuAgVz_ZdA-M-re8F4tF9j0OZTJqxQ4&callback=initMap"
+            type="text/javascript"></script>
     <title>main</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="block" style="background: #a6d8aa">block-1</div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="block" style="background: #FF8CA2">block-2</div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-            <div class="block" style="background: #7CBBFF">block-3
+    <div class="container-fluid">
+        <header class="header">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="block-inner block-inner_bg" style="background: #f0f29d">block-inner-1</div>
+                    <div class="col-md-12">
+                        <div class="header-top">
+                            <div class="header-top-title">
+                                <span style="color: red">FUN</span>
+                                <span style="color: blue">WEATHER.</span>
+                            </div>
+                            <div class="header-top-socials">
+                                <div class="header-top-socials__icons header-top-socials__icons-fb"></div>
+                                <div class="header-top-socials__icons header-top-socials__icons-git"></div>
+                                <div class="header-top-socials__icons header-top-socials__icons-ln"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="block-inner" style="background: #baefe0">block-inner-2</div>
+                    <div class="col-md-12 header-bottom">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="header-bottom-left">
+                                    <div class="header-left__date">Jan 12, 2018<span class="output-date"></span></div>
+                                    <div class="header-left-desc">Check the weather in your area</div>
+                                    <input type="text" placeholder="find your place" class="header-input-city">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="header-bottom-middle">
+                                    <div class="header-middle__location-block">
+                                        <div class="header-middle__city">Denver<span class="output-city"></span></div>
+                                        <div class="header-middle__country">USA<span class="output-country"></span></div>
+                                        <div class="header-middle__cord">[23.4, 678/78]<span class="output-cord"></span></div>
+                                    </div>
+                                    <div class="header-middle__data-block">
+                                        <div class="header-middle__pressure">Pressure:<span class="output-pressure"></span></div>
+                                        <div class="header-middle__humidity">Humidity:<span class="output-humidity"></span></div>
+                                        <div class="header-middle__wind">Wind:<span class="output-wind"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="header-bottom-right">
+                                    <div class="header-left-data">
+                                        <div class="header-right__degree">2-C<span class="output-degree"></span></div>
+                                        <div class="header-right__humidity">few-clouds<span class="output-humidity"></span></div>
+                                    </div>
+                                    <div class="header-left-img">
+                                        <img src="img/sun-cloud.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </header>
+        <div class="row">
+            <section class="map-wrapper">
+                <div id="map"></div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="slider">
+                <div class="col-md-12">
+                    <ul class="slider-list">
+                        <li class="slider-list-item slider-list-item_active"><img class="slider-list-item__pic" src="img/slide-exem.jpg" alt="coldweather picture"></li>
+                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
+                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
+                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
+                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
+                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="form">
+                <div class="col-md-12">
+                    <div class="form-wrap">
+                        <div class="form-title">
+                            <div class="form-title__subscribe">
+                                subscribe and get your
+                            </div>
+                            <div class="form-title__subscribe-title">
+                                FUN WEATHER
+                            </div>
+                        </div>
+                        <form action="">
+                            <input class="form-inputs" nmae="name" placeholder="name" type="text">
+                            <input class="form-inputs" nmae="email" placeholder="email" type="text">
+                            <input class="form-inputs" nmae="phone" placeholder="phone" type="text">
+                            <label for="check" class="terms">
+                                <input class="form-checkbox" id="check" type="checkbox"> I accept the terms of service
+                            </label>
+                            <input class="form-inputs form-inputs_btn" type="submit" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="footer-title-wrap">
+                            <div class="footer-title">
+                                <span style="color: red">FUN</span>
+                                <span style="color: blue">WEATHER.</span>
+                            </div>
+                        </div>
+                        <div class="footer-socials-wrap">
+                            <div class="footer-socials">
+                                <div class="header-top-socials__icons header-top-socials__icons-fb"></div>
+                                <div class="header-top-socials__icons header-top-socials__icons-git"></div>
+                                <div class="header-top-socials__icons header-top-socials__icons-ln"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-bottom-wrap">
+                                <div class="footer-copyright">
+                                    &#169; All information provide by OpenWeatherMap
+                                </div>
+                                <div class="footer-author">created by a.tupkalo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-</div>
 </body>
 <script src="js/main.js"></script>
 </html>
