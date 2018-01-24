@@ -5,14 +5,12 @@
   background-size: cover;
 }
 
-.header-bottom-left{
-  color: $wight;
-  font-size: 3.2rem;
-}
 .header-left-desc{
+  width: 200px;
   line-height: 1;
   margin: 20px 0;
-  color: #CCCCCC;
+  font-size: 2.2rem;
+  color: $wight;
 }
 .header-input-city{
   font-size: 1rem;
@@ -22,18 +20,17 @@
 .header-bottom-left{
   box-sizing: border-box;
   padding: 30px 15px 0 15px;
+
 }
 .header-bottom-middle{
   box-sizing: border-box;
   padding: 30px 15px 0 15px;
-  color: $wight;
-  font-size: 1.8rem;
+
 }
 .header-bottom-right{
   box-sizing: border-box;
   padding: 30px 15px 0 15px;
-  color: $wight;
-  font-size: 1.8rem;
+
 }
 .header-middle__location-block{
   margin-bottom: 50px;

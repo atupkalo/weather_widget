@@ -56,7 +56,11 @@ $wight: #fff;
   width: 100%;
   height: 780px;
 }
-
+.slider{
+  background: #648cff;
+  height: 660px;
+  width: 100%;
+}
 .slider-list-item{
   display: none;
 }
@@ -71,6 +75,28 @@ $wight: #fff;
   width: 100%;
 }
 
+
+.output{
+  margin: 15px;
+  padding: 5px 15px;
+  background: $wight;
+  @include border-radius(5px);
+  color: blue;
+  font-size: 1.6rem;
+}
+
+.data-desc{
+  font-size: 1.2rem;
+  color: $wight;
+  margin: 7% 0;
+}
+.header-data-flex{
+  @include display-flex(row, space-between, center);
+}
+.output_main{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
 
 
 

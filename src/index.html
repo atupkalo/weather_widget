@@ -39,33 +39,73 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="header-bottom-left">
-                                    <div class="header-left__date">Jan 12, 2018<span class="output-date"></span></div>
+                                    <div class="header-data-flex">
+                                        <div class="data-desc header-left__date">date:</div>
+                                        <div class="output output_main output_date">12, Jan 2018</div>
+                                    </div>
                                     <div class="header-left-desc">Check the weather in your area</div>
-                                    <input type="text" placeholder="find your place" class="header-input-city">
+                                    <select class="header-system" name="system">
+                                        <option value="metric">metric</option>
+                                        <option value="imperial">imperial</option>
+                                    </select>
+                                    <input id="inputcity" type="text" placeholder="find your place" class="header-input-city">
+                                    <input type="submit" class="get-city" value="search city">
+                                    <div class="header-error"></div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="header-bottom-middle">
                                     <div class="header-middle__location-block">
-                                        <div class="header-middle__city">Denver<span class="output-city"></span></div>
-                                        <div class="header-middle__country">USA<span class="output-country"></span></div>
-                                        <div class="header-middle__cord">[23.4, 678/78]<span class="output-cord"></span></div>
+                                        <div class="header-data-flex">
+                                            <div  class="data-desc header-middle__city">city:</div>
+                                            <div class="output output_main output_city">Denver</div>
+                                        </div>
+                                        <div class="header-data-flex">
+                                            <div class="data-desc header-middle__country">country:</div>
+                                            <div class="output output_country">USA</div>
+                                        </div>
+                                        <div class="header-data-flex">
+                                            <div class="data-desc header-middle__cord">coordinates:</div>
+                                            <div class="output output_coord">[23.4, 678/78]</div>
+                                        </div>
                                     </div>
                                     <div class="header-middle__data-block">
-                                        <div class="header-middle__pressure">Pressure:<span class="output-pressure"></span></div>
-                                        <div class="header-middle__humidity">Humidity:<span class="output-humidity"></span></div>
-                                        <div class="header-middle__wind">Wind:<span class="output-wind"></span></div>
+                                        <div class="header-data-flex">
+                                            <div class="data-desc header-middle__pressure">Pressure:</div>
+                                            <div id="output-pressure" class="output output_pressure">test</div>
+                                        </div>
+                                        <div class="header-data-flex">
+                                            <div class="data-desc header-middle__humidity">Humidity:</div>
+                                            <div class="output output_humidity">test</div>
+                                        </div>
+                                        <div class="header-data-flex">
+                                            <div class="data-desc header-middle__wind">Wind:</div>
+                                            <div class="output output_wind">test</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="header-bottom-right">
                                     <div class="header-left-data">
-                                        <div class="header-right__degree">2-C<span class="output-degree"></span></div>
-                                        <div class="header-right__humidity">few-clouds<span class="output-humidity"></span></div>
+                                        <div class="header-data-flex">
+                                            <div class="data-desc header-right__degree">degree C &deg;</div>
+                                            <div class="output output_main output_degree">12</div>
+                                        </div>
+                                        <div class="data-desc header-right__desc">few-clouds
+                                        </div>
                                     </div>
                                     <div class="header-left-img">
-                                        <img src="img/sun-cloud.png" alt="">
+                                        <ul class="header-img-list">
+                                            <li class="header-img-list__item active-icon">
+                                                <img class="header-icon" src="http://openweathermap.org/img/w/13d.png" alt="">
+                                            </li>
+                                            <li class="header-img-list__item"></li>
+                                            <li class="header-img-list__item"></li>
+                                            <li class="header-img-list__item"></li>
+                                            <li class="header-img-list__item"></li>
+                                            <li class="header-img-list__item"></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +123,7 @@
             <section class="slider">
                 <div class="col-md-12">
                     <ul class="slider-list">
-                        <li class="slider-list-item slider-list-item_active"><img class="slider-list-item__pic" src="img/slide-exem.jpg" alt="coldweather picture"></li>
+                        <li class="slider-list-item slider-list-item_active"><img class="slider-list-item__pic" src="img/.jpg" alt="coldweather picture"></li>
                         <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
                         <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
                         <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
