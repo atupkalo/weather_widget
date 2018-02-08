@@ -8,18 +8,15 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
           integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
           crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
-            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-            crossorigin="anonymous">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBswuAgVz_ZdA-M-re8F4tF9j0OZTJqxQ4&callback=initMap"
-            type="text/javascript"></script>
     <title>main</title>
 </head>
+<script>
+
+</script>
 <body>
     <div class="container-fluid">
         <header class="header">
+            <div class="header-bg"><img src="img/wave.png" alt="" class="header-bg__img"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -29,83 +26,94 @@
                                 <span style="color: blue">WEATHER.</span>
                             </div>
                             <div class="header-top-socials">
-                                <div class="header-top-socials__icons header-top-socials__icons-fb"></div>
-                                <div class="header-top-socials__icons header-top-socials__icons-git"></div>
-                                <div class="header-top-socials__icons header-top-socials__icons-ln"></div>
+                                <div class="header-top-socials__icons header-top-socials__icons-fb">
+                                    <a href="https://www.facebook.com/anatoliy.orehov" class="header__socials-link">
+                                        <img src="img/fb.svg" class="socials-icon socials-icon_fb" alt="icon">
+                                    </a>
+                                </div>
+                                <div class="header-top-socials__icons header-top-socials__icons-git">
+                                    <a href="https://github.com/atupkalo" class="header__socials-link">
+                                        <img src="img/git.svg" class="socials-icon socials-icon_git" alt="icon">
+                                    </a>
+                                </div>
+                                <div class="header-top-socials__icons header-top-socials__icons-ln">
+                                    <a href="https://www.linkedin.com/in/anatolii-tupkalo-3aa8bb9b/" class="header__socials-link">
+                                        <img src="img/in.svg" class="socials-icon socials-icon_in" alt="icon">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12 header-bottom">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="header-bottom-left">
-                                    <div class="header-data-flex">
+                                    <div class="header-data__flex">
                                         <div class="data-desc header-left__date">date:</div>
-                                        <div class="output output_main output_date">12, Jan 2018</div>
+                                        <div class="output output_main output_date"></div>
                                     </div>
                                     <div class="header-left-desc">Check the weather in your area</div>
                                     <select class="header-system" name="system">
                                         <option value="metric">metric</option>
                                         <option value="imperial">imperial</option>
                                     </select>
-                                    <input id="inputcity" type="text" placeholder="find your place" class="header-input-city">
-                                    <input type="submit" class="get-city" value="search city">
+                                    <input id="inputcity" type="text" placeholder="enter your city" class="header-input-city">
+                                    <input type="submit" class="header-searchcity-btn" value="SEARCH CITY">
                                     <div class="header-error"></div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="header-bottom-middle">
                                     <div class="header-middle__location-block">
-                                        <div class="header-data-flex">
+                                        <div class="header-data__flex">
                                             <div  class="data-desc header-middle__city">city:</div>
-                                            <div class="output output_main output_city">Denver</div>
+                                            <div class="output output_main output_city"></div>
                                         </div>
-                                        <div class="header-data-flex">
+                                        <div class="header-data__flex">
                                             <div class="data-desc header-middle__country">country:</div>
-                                            <div class="output output_country">USA</div>
+                                            <div class="output output_country"></div>
                                         </div>
-                                        <div class="header-data-flex">
+                                        <div class="header-data__flex">
                                             <div class="data-desc header-middle__cord">coordinates:</div>
-                                            <div class="output output_coord">[23.4, 678/78]</div>
+                                            <div class="output output_coord"></div>
                                         </div>
                                     </div>
                                     <div class="header-middle__data-block">
-                                        <div class="header-data-flex">
+                                        <div class="header-data__flex">
                                             <div class="data-desc header-middle__pressure">Pressure:</div>
-                                            <div id="output-pressure" class="output output_pressure">test</div>
+                                            <div id="output-pressure" class="output output_pressure"></div>
                                         </div>
-                                        <div class="header-data-flex">
+                                        <div class="header-data__flex">
                                             <div class="data-desc header-middle__humidity">Humidity:</div>
-                                            <div class="output output_humidity">test</div>
+                                            <div class="output output_humidity"></div>
                                         </div>
-                                        <div class="header-data-flex">
-                                            <div class="data-desc header-middle__wind">Wind:</div>
-                                            <div class="output output_wind">test</div>
+                                        <div class="header-data__flex">
+                                            <div id="winds" class="data-desc header-middle__wind">Wind:</div>
+                                            <div class="output output_wind"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="header-bottom-right">
-                                    <div class="header-left-data">
-                                        <div class="header-data-flex">
-                                            <div class="data-desc header-right__degree">degree C &deg;</div>
-                                            <div class="output output_main output_degree">12</div>
+                                    <div class="header-right__data">
+                                        <div class="header-data__flex">
+                                            <div class="data-desc header-right__degree">degree:</div>
+                                            <div class="output output_main output_degree"></div>
                                         </div>
-                                        <div class="data-desc header-right__desc">few-clouds
+                                        <div class="data-desc header-data__flex header-right__min-max">
+                                            <div class="data-desc header-right__min">min:</div>
+                                            <div class="output output_min"></div>
+                                            <div class="data-desc header-right__max">max:</div>
+                                            <div class="output output_max"></div>
+                                        </div>
+                                        <div class="header-data__flex">
+                                            <div class="data-desc header-right__desc">description:</div>
+                                            <div class="output output_desc"></div>
                                         </div>
                                     </div>
-                                    <div class="header-left-img">
-                                        <ul class="header-img-list">
-                                            <li class="header-img-list__item active-icon">
-                                                <img class="header-icon" src="http://openweathermap.org/img/w/13d.png" alt="">
-                                            </li>
-                                            <li class="header-img-list__item"></li>
-                                            <li class="header-img-list__item"></li>
-                                            <li class="header-img-list__item"></li>
-                                            <li class="header-img-list__item"></li>
-                                            <li class="header-img-list__item"></li>
-                                        </ul>
+                                    <div class="header-right__img">
+                                        <img src="img/01d.png" alt="weahter icon" class="header-icon">
                                     </div>
                                 </div>
                             </div>
@@ -116,47 +124,44 @@
         </header>
         <div class="row">
             <section class="map-wrapper">
+                <div class="map-info"></div>
                 <div id="map"></div>
             </section>
         </div>
-        <div class="row">
-            <section class="slider">
-                <div class="col-md-12">
-                    <ul class="slider-list">
-                        <li class="slider-list-item slider-list-item_active"><img class="slider-list-item__pic" src="img/.jpg" alt="coldweather picture"></li>
-                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
-                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
-                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
-                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
-                        <li class="slider-list-item"><img class="slider-list-item__pic" src="" alt="coldweather picture"></li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="row">
-            <section class="form">
-                <div class="col-md-12">
-                    <div class="form-wrap">
-                        <div class="form-title">
-                            <div class="form-title__subscribe">
-                                subscribe and get your
-                            </div>
-                            <div class="form-title__subscribe-title">
-                                FUN WEATHER
-                            </div>
-                        </div>
-                        <form action="">
-                            <input class="form-inputs" nmae="name" placeholder="name" type="text">
-                            <input class="form-inputs" nmae="email" placeholder="email" type="text">
-                            <input class="form-inputs" nmae="phone" placeholder="phone" type="text">
-                            <label for="check" class="terms">
-                                <input class="form-checkbox" id="check" type="checkbox"> I accept the terms of service
-                            </label>
-                            <input class="form-inputs form-inputs_btn" type="submit" value="SUBSCRIBE">
-                        </form>
+        <div class="slider-blur">
+            <div class="slider-blur__bg">
+                <img id="slider-pic" src="img/01d.jpg" alt="weather illustration" class="slider-blur__img">
+            </div>
+            <div class="slider-blur__form-wrap">
+                <div class="slider-blur__form-bg"></div>
+                <div class="get-respond">
+                    <div class="respond-wrap">
+                        <span class="respond__one">Your subscribe is accepted. </span><br/>
+                        <span class="respond__tow">Thank you for your business</span>
                     </div>
                 </div>
-            </section>
+                <div class="slider-wrap__inner">
+                    <div class="form-title">
+                        <div class="form-title__subscribe">
+                            subscribe to
+                        </div>
+                        <div class="form-title__subscribe-title">
+                            FUN WEATHER
+                        </div>
+                    </div>
+                    <form action="/form.php" method="post">
+                        <div id="error" class="form-error"></div>
+                        <input class="form-inputs form-inputs_name" name="name" placeholder="name" type="text">
+                        <input class="form-inputs form-inputs_mail" name="email" placeholder="email" type="text">
+                        <input class="form-inputs form-inputs_phone" name="phone" placeholder="phone" type="text">
+                        <div class="form__terms-box">
+                            <label for="checkbox" class="form__terms">I accept the terms of service</label>
+                            <input class="form__checkbox" id="checkbox" type="checkbox" >
+                        </div>
+                        <input id="form-btn" class="form-inputs form-inputs_btn" type="submit" value="SUBSCRIBE" disabled>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="row">
             <footer class="footer">
@@ -170,9 +175,21 @@
                         </div>
                         <div class="footer-socials-wrap">
                             <div class="footer-socials">
-                                <div class="header-top-socials__icons header-top-socials__icons-fb"></div>
-                                <div class="header-top-socials__icons header-top-socials__icons-git"></div>
-                                <div class="header-top-socials__icons header-top-socials__icons-ln"></div>
+                                <div class="header-top-socials__icons header-top-socials__icons-fb">
+                                    <a href="https://www.facebook.com/anatoliy.orehov" class="footer__socials-link">
+                                        <img src="img/fb.svg" class="socials-icon socials-icon_fb" alt="icon">
+                                    </a>
+                                </div>
+                                <div class="header-top-socials__icons header-top-socials__icons-git">
+                                    <a href="https://github.com/atupkalo" class="footer__socials-link">
+                                        <img src="img/git.svg" class="socials-icon socials-icon_git" alt="icon">
+                                    </a>
+                                </div>
+                                <div class="header-top-socials__icons header-top-socials__icons-ln">
+                                    <a href="https://www.linkedin.com/in/anatolii-tupkalo-3aa8bb9b/" class="footer__socials-link">
+                                        <img src="img/in.svg" class="socials-icon socials-icon_in" alt="icon">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -191,5 +208,17 @@
         </div>
     </div>
 </body>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx_QbtcQiPItwFqCnuB7A9ufAWemdtRI4&callback=initMap">
+</script>
+<script>
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 <script src="js/main.js"></script>
+
 </html>

@@ -1,16 +1,18 @@
 $wight: #fff;
+$darkblue: #353854;
 
 @mixin border-radius($radius){
   border-radius: $radius;
 }
 @mixin input-styles($bg){
   width: 100%;
-  height: 50px;
-  margin: 12px 0;
+  margin: 15px 0;
   background: $bg;
   border: none;
+  font-size: 18px;
+  border: 1px solid transparent;
   &:hover{
-    border: 1px solid #ffcb86;
+    border: 1px solid $darkblue;
   }
 }
 
@@ -24,6 +26,7 @@ $wight: #fff;
 @import "common/header";
 @import "common/form";
 @import "common/footer";
+@import "common/slider-blur";
 
 @import "assets/font-awesome";
 @import "assets/normalize";
@@ -47,58 +50,29 @@ $wight: #fff;
   height: 700px;
 }
 .map-wrapper{
+  position: relative;
   width: 100%;
   height: 700px;
-  margin-top: -80px;
+  margin-top: -55px;
   z-index: -10;
 }
 #map{
   width: 100%;
   height: 780px;
 }
-.slider{
-  background: #648cff;
-  height: 660px;
+
+.socials-icon{
   width: 100%;
+  height: 100%;
 }
-.slider-list-item{
+
+
+.get-respond{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: none;
 }
-.slider-list-item_active{
-  display: block;
-}
-.slider-list{
-  padding: 0;
-  margin: 0;
-}
-.slider-list-item__pic{
-  width: 100%;
-}
-
-
-.output{
-  margin: 15px;
-  padding: 5px 15px;
-  background: $wight;
-  @include border-radius(5px);
-  color: blue;
-  font-size: 1.6rem;
-}
-
-.data-desc{
-  font-size: 1.2rem;
-  color: $wight;
-  margin: 7% 0;
-}
-.header-data-flex{
-  @include display-flex(row, space-between, center);
-}
-.output_main{
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-
 
 
 

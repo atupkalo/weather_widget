@@ -8,7 +8,7 @@ gulp.task('default', ['clean'], function(){
     gulp.run('dev');
 });
 gulp.task('dev', ['build', 'watch', 'browser-sync']);
-gulp.task('build', ['webpack', 'html', 'styles', 'pics', 'fonts']);
+gulp.task('build', ['webpack', 'html', 'styles', 'pics', 'fonts', 'php']);
 
 gulp.task('webpack', function() {
     return gulp.src('src/js/index.js')
@@ -48,6 +48,11 @@ gulp.task('pics', function(){
     return gulp.src('src/img/**.*')
         .pipe(lp.imagemin())
         .pipe(gulp.dest('dist/img/'));
+});
+
+gulp.task('php', function(){
+    return gulp.src('src/**.php')
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('fonts', function(){
