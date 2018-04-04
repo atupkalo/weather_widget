@@ -1,4 +1,23 @@
-@media (max-width: 786px){
+@media(max-width: 1200px){
+  .slider-blur__form-bg{
+    background: url("/img/w-bg1200.jpg") no-repeat;
+  }
+}
+@media(max-width: 920px){
+  .slider-blur__form-bg{
+    background: url("/img/w-bg920.jpg") no-repeat;
+  }
+}
+@media(max-width: 768px){
+  .slider-blur__form-bg{
+    background: url("/img/w-bg768.jpg") no-repeat;
+  }
+  .slider-blur__form-wrap{
+    width: 360px;
+  }
+}
+
+@media (max-width: 420px){
   .header-top-title{
     font-size: 16px;
   }
@@ -18,5 +37,11 @@
     margin: 0 auto;
     max-height: 200px;
     max-width: 200px;
+  }
+  .slider-blur__form-wrap{
+    width: 320px;
+  }
+  .slider-blur__form-bg{
+    background: url("/img/w-bg420.jpg") no-repeat;
   }
 }

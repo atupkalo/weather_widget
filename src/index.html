@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
@@ -16,7 +19,12 @@
 <body>
     <div class="container-fluid">
         <header class="header">
-            <div class="header-bg"><img src="img/wave.png" alt="" class="header-bg__img"></div>
+            <div class="header-bg">
+                <picture>
+                    <source srcset="img/wave.png" media="(min-width: 768px)">
+                    <img src="img/s-wave.jpg" alt="" class="header-bg__img">
+                </picture>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -130,7 +138,12 @@
         </div>
         <div class="slider-blur">
             <div class="slider-blur__bg">
-                <img id="slider-pic" src="img/01d.jpg" alt="weather illustration" class="slider-blur__img">
+                <pictur>
+                    <source srcset="img/w-bg.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/w-bg1200.jpg" media="(min-width: 920px)">
+                    <source srcset="img/w-bg920.jpg" media="(min-width: 768px)">
+                    <img id="slider-pic" src="img/w-bg420.jpg" alt="weather illustration" class="slider-blur__img">
+                </pictur>
             </div>
             <div class="slider-blur__form-wrap">
                 <div class="slider-blur__form-bg"></div>
@@ -208,17 +221,8 @@
         </div>
     </div>
 </body>
-<script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx_QbtcQiPItwFqCnuB7A9ufAWemdtRI4&callback=initMap">
-</script>
-<script>
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
-        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-        crossorigin="anonymous">
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx_QbtcQiPItwFqCnuB7A9ufAWemdtRI4"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
 <script src="js/main.js"></script>
 
 </html>

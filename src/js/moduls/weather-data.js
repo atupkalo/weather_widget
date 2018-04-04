@@ -1,9 +1,30 @@
 /**
  * Created by Anatoliy Tupkalo on 2/5/2018.
  */
-
+const blur = require('./blur.js');
 
 module.exports = function(){
+
+
+    var latDef = 39.74;
+    var lngDef =  -104.98;
+    function initMap(lat, lng){
+        var coord = {lat: lat, lng: lng}
+        var elem = document.getElementById('map');
+        var options = {
+            zoom: 9,
+            center: coord
+        };
+        var myMap = new google.maps.Map(elem, options);
+        var marker = new google.maps.Marker({
+            position: coord,
+            map: myMap,
+            icon: 'img/marker-d.png'
+        });
+
+    };
+    initMap(latDef, lngDef);
+
     var btn = $('.header-searchcity-btn');
 
     btn.click(function(){
@@ -32,7 +53,7 @@ module.exports = function(){
             };
 
 
-        if(!city == ''){
+        if(city !== ''){
             $.ajax({
                 url: 'http://api.openweathermap.org/data/2.5/weather?q='
                 + city + '&units=' + selectVal + '&APPID=f50999261c38690e3547bd6f4fa1ab85',
@@ -40,9 +61,9 @@ module.exports = function(){
                 dataType: "jsonp",
                 success: function(data){
                     showData(data);
+                    initMap(data.coord.lat, data.coord.lon);
 
-                    sliderBg.attr('src', 'img/' + data.weather[0].icon + '.jpg');
-                    formBg.css('background', 'url(/img/'+ data.weather[0].icon + '.jpg');
+                    blur();
 
                     divError.text('');
                 }
@@ -68,5 +89,6 @@ module.exports = function(){
         return name + degree + pressure + coord + country + weather + wind + humid + min + max;
 
     };
+
 
 };

@@ -45,7 +45,7 @@ gulp.task('html', function(){
 });
 
 gulp.task('pics', function(){
-    return gulp.src('src/img/**.*')
+    return gulp.src('src/img/**/**.*')
         .pipe(lp.imagemin())
         .pipe(gulp.dest('dist/img/'));
 });

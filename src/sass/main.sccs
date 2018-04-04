@@ -73,6 +73,11 @@ $darkblue: #353854;
   height: 100%;
   display: none;
 }
+p{
+  font-size: 36px;
+  z-index: 999;
+  cursor: pointer;
+}
 
 
 
